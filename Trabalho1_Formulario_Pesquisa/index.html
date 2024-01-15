@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Empresa Trabalhe Conosco</h1>
+        <p id="description">Envie seu currículo</p>
+      </header>
+      
+      <form id="survey-form">
+        <fieldset class="primeirofield">
+        <div class="form-group">
+          <label for="name" id="name-label">Nome <input 
+          id="name"
+          type="text"
+          placeholder="Digite seu nome"
+          required
+          />
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="email:" id="email-label">Email <input 
+          id="email"
+          type="email"
+          placeholder="Digite seu email"
+          required
+          />
+          </label> 
+          </div>
+
+          <div class="form-group">
+          <label for="number" id="number-label">Idade <input
+          id="number"
+          type="number"
+          min="10"
+          max="130"
+          placeholder="Digite sua idade"
+          required
+          />
+          </label>
+          </div>
+        </div>
+       </fieldset>
+       </form>
+       <form id="survey-form">    
+       <fieldset>
+         <div class="form-group">
+           <label for="identify">Com o que você se identifica? 
+           <select id="dropdown" name="identify"> 
+             <option 
+             disabled selected value >Selecione uma das opções</option>
+             <option value="dedicado">Dedicação</option>
+             <option value="estudioso">Força de vontade</option>
+             <option value="grupo">Ambicioso</option>
+          </select>
+          </label>
+         </div>
+
+         <div class="form-group">
+         <p>Você atualmente está:</p>
+         <label for="situacao"><input value="estudante" id="situacao" type="radio" name="situacao" />Estudante
+         </label>
+         <label for="situacao"><input value="trabalhando" id="situacao" type="radio" name="situacao" />Já estou trabalhando
+         </label>
+         <label for="situacao"><input value="desempregado" id="situacao" type="radio" name="situacao"/>Desempregado</label>
+         </div>
+
+         <div class="form-group">
+           <p>O que você busca na empresa?</p>
+           <label><input name="empresa" value="desafios" type="checkbox"/>Desafios
+           </label>
+           <label><input name="empresa" value="crescimento" type="checkbox"/>Crescimento profissional
+           </label>
+           <label><input name="empresa" value="oportunidade" type="checkbox"/>Oportunidades
+           </label>
+           <label><input name="empresa" value="conhecimento" type="checkbox"/>Conhecimento
+           </label>
+         </div>  
+       
+         </div class="form-group">
+          <p>Diga algo sobre você:</p>
+          <textarea id="bio" name="bio" rows="4" cols="36" placeholder="Eu acredito que eu tenho o perfil da empresa pois..."></textarea>
+        </label>
+         </div>
+       </fieldset>
+      </form>
+      <form id="survey-form">
+       <input 
+       id="submit" 
+       type="submit" 
+       value="Submit" />
+      </form>
+      
+    </div>
+  </body>
+</html>
