@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  border: 0;
+  height: 100vh;
+  
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 2px 2px 2px #aaa;
+  
+  
+}
+header {
+  border: 0;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 10vw 90vw;
+  grid-template-rows: 10vw
+}
+ul{
+  list-style: none;
+}
+header img{
+  width: 10vw;
+  height: 10vw;
+  
+}
+header nav{
+  
+  width: 90vw;
+  height: 10vw;
+  display: flex;
+  justify-content: space-around;
+  
+  align-items: center;
+}
+header ul{
+  
+  display: flex;
+  justify-content: end;
+}
+li{
+  padding-right: 5vh;
+}
+body{
+  background-color: #44440033;
+}
+header p{
+  font-size: 4vh;
+}
+iframe{
+  height: 40vw;
+  width: 80vw;
+}
+.Itens_a_Venda{
+  background-color: #1111112f;
+}
+.itens{
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 15vw 15vw;
+}
+.itens img{
+  width: 100px;
+  height: 100px;
+}
+h2{
+   text-align: center;
+}
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Itens_a_Venda img{
+  
+  width: 12vw;
+  height: 12vw;
+  background-color: #11111111;
+ 
+}
+.Itens_a_Venda img, .Itens_a_Venda p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#form, #loja{
+  padding-top: 2vw;
+  
+  display: block;
+  text-align: center;
+}
+#form{
+  border-top: 1px solid black;
+}
+#loja{
+  border-bottom: 1px solid black;
+}
+@media (max-width: 600px) {
+  img{
+    width: 4vw;
+  }
+}
+p{
+  font-family: 'Inconsolata', monospace;
+  font-weight: Light;
+}
+a:hover{
+  text-decoration: none;
+}
+a:link{
+  color: black;
+}
+
+
+
+
